@@ -1,0 +1,61 @@
+// #############
+// MEDIA QUERIES
+// #############
+@media (min-width: 768px) {
+  .primary-title {
+    font-size: 4rem;
+  }
+
+  .hero {
+    background-size: contain;
+  }
+
+  .section-title {
+    font-size: 3.5rem;
+  }
+
+  .featured-product {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 3rem 0;
+  }
+
+  .featured {
+    img {
+      width: 80%;
+    }
+  }
+
+  .product {
+    flex-direction: row;
+    padding: 3rem 8rem;
+
+    img {
+      order: 1;
+    }
+  }
+
+  .product:nth-of-type(2) img {
+    order: -1;
+  }
+
+  .product-title {
+    font-size: 3.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .product:nth-of-type(2) img {
+    position: relative;
+    left: -7rem;
+  }
+  .product:nth-of-type(odd) img {
+    position: relative;
+    right: -8rem;
+  }
+
+  .product-title {
+    font-size: 4.5rem;
+  }
+}
