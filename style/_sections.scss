@@ -1,0 +1,87 @@
+// Section Features
+.featured {
+  padding: 7rem 0;
+  background: #eee;
+  margin-bottom: 4rem;
+
+  .details {
+    transition: 0.4s transform ease, 0.3s color linear;
+    color: $clear-color;
+    background: #2193b0;
+    border-radius: 1rem;
+    margin: 0 3rem;
+    &:hover,
+    &:focus {
+      transform: translateY(-5px);
+      color: orange;
+    }
+
+    .price {
+      display: block;
+      font-size: 2rem;
+      color: $clear-color;
+      font-weight: 700;
+      line-height: 1;
+
+      &:hover,
+      &:focus {
+        color: orange;
+      }
+    }
+  }
+}
+
+.featured-product {
+  margin-top: 1rem;
+
+  img {
+    width: 50%;
+    transform: scale(0.85);
+    margin: 0 auto;
+    padding: 2rem 0;
+    transition: transform 0.5s ease;
+
+    &:hover,
+    &:focus {
+      transform: scale(1.1) rotate(45deg);
+    }
+  }
+}
+
+// Section Products
+.product {
+  background: linear-gradient(45deg, $accent-color, orangered);
+  margin: 3rem 0;
+  border-radius: 1rem;
+  padding: 3rem;
+  height: 100vh;
+  .btn {
+    background: red;
+  }
+  &:nth-of-type(2) {
+    background: rgb(145, 138, 93);
+    .btn {
+      background: $titles-color;
+    }
+  }
+
+  &:nth-of-type(3) {
+    background: #2193b0;
+    .btn {
+      background: green;
+    }
+  }
+
+  img {
+    width: 90%;
+    margin: -5rem auto 0;
+  }
+
+  div {
+    margin-top: auto;
+
+    p {
+      margin: 1.5rem;
+    }
+  }
+}
